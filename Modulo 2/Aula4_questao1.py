@@ -12,4 +12,4 @@ area_m2 = comprimento * largura
 preco_total = preco_m2 * area_m2
 
 #impressão do resultado formatado
-print(f"O terreno possui {area_m2} e custa R${preco_total:,.2f}")
+print(f"O terreno possui {area_m2}m2 e custa R${preco_total:,.2f}")

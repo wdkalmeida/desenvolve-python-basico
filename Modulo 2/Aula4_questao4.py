@@ -6,34 +6,28 @@ valor = int(input("Digite um valor em reais: "))
 # Iniciar as variáveis para cada nota
 notas100 = notas50 = notas20 = notas10 = notas5 = notas2 = notas1 = 0
 
-# Calcular a quantidade de cada nota
-if valor >= 100:
-    notas100 = valor // 100
-    valor %= 100
+# Calcular a quantidade de cada nota ##começar da maior nota quantas notas
+notas100 = valor // 100  #576 // 100 = 5
+##atualizar quanto falta depois da maior nota
+valor = valor % 100 #576 - 5*100 = 76
 
-if valor >= 50:
-    notas50 = valor // 50
-    valor %= 50
+notas50 = valor // 50  #76 // 50= 1
+valor = valor % 50 #valor -50*notas50 #26
 
-if valor >= 20:
-    notas20 = valor // 20
-    valor %= 20
+notas20 = valor // 20  #26 // 20= 1
+valor = valor % 20 ## falta 6
 
-if valor >= 10:
-    notas10 = valor // 10
-    valor %= 10
+notas10 = valor // 10  #6 // 10= 0
+valor = valor % 10 ## falta 6
 
-if valor >= 5:
-    notas5 = valor // 5
-    valor %= 5
+notas5 = valor // 5  #6 // 5= 1
+valor = valor % 5 #valor -5*notas5 #1
 
-if valor >= 2:
-    notas2 = valor // 2
-    valor %= 2
+notas2 = valor // 2 #1 // 2= 0
+valor = valor % 2 ## falta 1
 
-if valor >= 1:
-    notas1 = valor // 1
-    valor %= 1
+notas1 = valor // 1 #1 // 2= 1
+valor = valor % 1 #valor -2*notas50 #0
 
 # Imprimir a quantidade de cada nota
 print(f"Notas de 100: {notas100}")

@@ -11,4 +11,3 @@ celsius_inteiro = int(Celsius)
 
 #imprimindo resultado formatado
 print(f"{Fahrenheit} graus Fahrenheit são {celsius_inteiro} graus Celsius.")
-
