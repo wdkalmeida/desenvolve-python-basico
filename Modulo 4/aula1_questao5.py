@@ -15,5 +15,5 @@ while i <= int(qtdRespondentes):
     i = i + 1
 
 media = idadeTotal / int(qtdRespondentes)
-print("Média das idades: ", media)
+print(f"A média das idades é {media:.0f} anos")
 #print(f"Media das idades: {media:.2f}")(outra opção)
