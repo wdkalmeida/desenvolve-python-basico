@@ -8,7 +8,7 @@
 #e um caractere Tipo ('S', 'R' ou 'C') com o tipo de cobaia (S:Sapo, R:Rato ou C:Coelho).
 #Saída: Apresente o total de cobaias utilizadas, o total de cada tipo de cobaia e o percentual
 #de cada uma em relação ao total de cobaias utilizadas.
-
+  #Entradas de dados
 qtdExperimentos = int(input("Quantos experimentos? "))
 qtdCobaias = 0
 qtdSapo = 0
@@ -20,7 +20,7 @@ i = 1
 #    infos = info.split(" ")
 #    qtd = int(infos[0])
 #    tipo = infos[1].upper()[0]
-
+  #Iterações
 while i <= qtdExperimentos:    
     info = input("Qtd de cobaias e animal: ")
     infos = info.split(" ")

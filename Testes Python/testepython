@@ -1,0 +1,29 @@
+def calculadora():
+    #Solicitar os operandos e operador
+    primeiro_operando = float(input("Digite o primeiro operando: "))
+    operador = input("Digite o operador (+, -, /, *, **): ")
+    segundo_operando = float(input("Digite o segundo operando: "))
+
+    #Executa a operação de acordo com operador informado
+    if operador == "+":
+        resultado = primeiro_operando + segundo_operando
+        print(f"Resultado: {primeiro_operando} + {segundo_operando} = {resultado}")
+    elif operador == "-":
+        resultado = primeiro_operando - segundo_operando
+        print(f"Resultado: {primeiro_operando} - {segundo_operando} = {resultado}")
+    elif operador == "/":
+        if segundo_operando !=0:
+            resultado = primeiro_operando / segundo_operando
+            print(f"Resultado: {primeiro_operando} / {segundo_operando} = {resultado}")
+        else: print("Erro! Divisão por zero não é permitida.")
+    elif operador == '*':
+        resultado = primeiro_operando * segundo_operando
+        print(f"Resultado: {primeiro_operando} * {segundo_operando} = {resultado}")
+    elif operador == '**':
+        resultado = primeiro_operando ** segundo_operando
+        print(f"Resultado: {primeiro_operando} ** {segundo_operando} = {resultado}")
+    else: 
+        print("Erro! Operação inválida.")
+
+        #Chamar a função para executar a calculadora
+        calculadora()
